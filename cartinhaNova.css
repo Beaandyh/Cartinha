@@ -1,0 +1,158 @@
+/* =========================================
+   1. RESET E CONFIGURAÇÕES GERAIS
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+/* =========================================
+   2. CABEÇALHO E MENU DE NAVEGAÇÃO
+   ========================================= */
+.header {
+    background-color: #f688b4; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition:  #7a3f56 0.3s ease;
+}
+
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* =========================================
+   3. FRASE DE DESTAQUE 
+   ========================================= */
+.colecao {
+    background-color: #f7f7f9;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.destaque {
+    color: #d95791;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.colecao h1 {
+    color: #202832;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    color: #666;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   4. CARDS (ARTISTAS)
+   ========================================= */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f6bfd5;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #f688b4;
+    border-radius: 15px;
+    color: #fff;
+    width: 90%;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card h2:hover {
+    transform: scale(1.05);
+    background-color:#7a3f56 ;
+}
+
+/* Foto redonda do artista */
+.imagem {
+    width: 180px;
+    height: 180px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 4px solid #f688b4;
+    display: block;
+    object-fit: cover;
+}
+
+.imagem:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Lista de informações */
+ul.infos {
+    list-style-type: none;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+ul.infos li {
+    background-color: #f688b4;
+    color: #f7f1ed;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+}
+
+ul.infos li:hover {
+    transform: scale(1.05);
+    background-color: #7a3f56;
+}
